@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Vaša košarica";
+}
+@model MusicStore.Models.Product
+
+<h2>Books in your cart</h2>
+
+<p>@Model.Name - @Model.Artist</p>
+<p></p>
+<br />
+<td>
+    <div class="col-6 text-right">
+        <a asp-controller="Product" asp-action="List" class="btn btn-outline-primary">Dodaj još jedan proizvod</a>
+        <a asp-controller="Product" asp-action="List" class="btn btn-outline-primary">Nastavi s plaćanjem</a>
+    </div>
+</td>
